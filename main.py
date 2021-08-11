@@ -5,7 +5,7 @@ import scapy.all as scapy
 packet = scapy.ARP(op=2, pdst="Destination (Target) IP address", hwdst="Destination (Target) MAC address", pscr="Source IP address")
 # op=2 because it is response
 # psrc is source IP address of sender which we need to provide the IP address of gateway
-
-
+# pdst is destination IP address
+# hwdst is destnation MAC address
 #sending response packet
 scapy.send(packet)
